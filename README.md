@@ -38,3 +38,26 @@ After running the command, the .mbox files will be located in:
 
 ```plaintext
 C:\Users\YOURNAME\Downloads\myemail\mbox_output
+```
+--------------
+
+## ✂️ Splitting MBOX Files (Optional)
+Some platforms like Hostinger or Zoho Mail only allow file uploads of up to 250MB at a time. If your .mbox file exceeds this limit, you can use the `file-split.py` script to split it into smaller chunks.
+
+1. Check out the `file-split.py` script in this repository.
+2. Run the script with the following command to split your .mbox file:
+
+    ```bash
+    python file-split.py "C:\Users\YOURNAME\Downloads\myemail\mbox_output\yourfile.mbox"
+    ```
+
+   This will split the `.mbox` file into smaller parts of 250MB or less.
+
+## 📝 Notes
+- Do not rename `readpst.exe` or modify the folder structure inside the ZIP.
+- This method works entirely offline.
+- Tested on Windows 10 & 11.
+
+
+
+
